@@ -23,6 +23,7 @@ export const linksData: LinksData = {
     href: "/tools",
     paths: [
       { title: "Base64 Decoder", href: "/tools/base64-decoder" },
+      { title: "Base64 Encoder", href: "/tools/base64-encoder" },
       { title: "UUID Generator", href: "/tools/uuid-generator" },
     ],
   },
