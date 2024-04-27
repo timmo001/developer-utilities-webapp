@@ -19,9 +19,9 @@ This webapp provides a single place for developers to access a collection of uti
 
 ## Deployment
 
-This project is deployed to [developer-utiltities.timmo.dev](https://developer-utiltities.timmo.dev), but you can deploy it on your own Vercel account and GitHub repository by clicking this button:
+This project is deployed to [developer-utilities.timmo.dev](https://developer-utilities.timmo.dev), but you can deploy it on your own Vercel account and GitHub repository by clicking this button:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftimmo001%2Fdeveloper-utilities-webapp&project-name=developer-utilities-webapp&repository-name=developer-utilities-webapp&demo-title=Developer%20Utiltities%20Webapp&demo-url=https%3A%2F%2Fdeveloper-utiltities.timmo.dev)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftimmo001%2Fdeveloper-utilities-webapp&project-name=developer-utilities-webapp&repository-name=developer-utilities-webapp&demo-title=Developer%20Utiltities%20Webapp&demo-url=https%3A%2F%2Fdeveloper-utilities.timmo.dev)
 
 You can also deploy the webapp to any provider of your choice.
 
