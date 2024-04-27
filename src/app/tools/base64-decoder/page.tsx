@@ -25,7 +25,7 @@ export default function Base64Decoder(): JSX.Element {
       <div className="flex flex-col items-center justify-center w-full p-8 rounded-lg">
         <Input multiline value={valueIn} setValue={handleSetValue} />
 
-        <Output multiline value={valueOut} />
+        <Output value={valueOut} />
       </div>
     </section>
   );

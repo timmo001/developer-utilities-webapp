@@ -4,13 +4,7 @@ import { mdiCheck, mdiContentCopy } from "@mdi/js";
 import Icon from "@mdi/react";
 
 let timeout: NodeJS.Timeout;
-export default function Output({
-  multiline,
-  value,
-}: {
-  multiline?: boolean;
-  value?: string;
-}): JSX.Element {
+export default function Output({ value }: { value?: string }): JSX.Element {
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopy = () => {
@@ -24,7 +18,7 @@ export default function Output({
   if (!value) return <></>;
 
   const invalidValue = useMemo<boolean>(
-    () => value.toLowerCase().startsWith("invalid"),
+    () => value?.toLowerCase().startsWith("invalid"),
     [value]
   );
 
