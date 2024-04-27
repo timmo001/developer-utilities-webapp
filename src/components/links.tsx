@@ -21,7 +21,10 @@ export const linksData: LinksData = {
   [LinksKeys.Tools]: {
     title: "Tools",
     href: "/tools",
-    paths: [{ title: "UUID Generator", href: "/tools/uuid-generator" }],
+    paths: [
+      { title: "Base64 Decoder", href: "/tools/base64-decoder" },
+      { title: "UUID Generator", href: "/tools/uuid-generator" },
+    ],
   },
 };
 
