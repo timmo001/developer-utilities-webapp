@@ -8,6 +8,8 @@ The reason for building this webapp is to provide a single place for developers 
 
 - Base64 Decoder
 - Base64 Encoder
+- JSON Beautifier
+- JSON Minifier
 - UUID Generator
 
 ## Deployment
