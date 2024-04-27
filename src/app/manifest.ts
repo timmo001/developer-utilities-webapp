@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 
+import { metadata as mainMetadata } from "@/app/layout";
 import { metadata as base64DecoderMetadata } from "@/app/tools/base64-decoder/page";
 import { metadata as base64EncoderMetadata } from "@/app/tools/base64-encoder/page";
 import { metadata as jsonFormatterMetadata } from "@/app/tools/json-formatter/page";
@@ -12,15 +13,15 @@ import { metadata as xmlFormatterMetadata } from "@/app/tools/xml-formatter/page
 import { metadata as xmlMinifierMetadata } from "@/app/tools/xml-minifier/page";
 
 export default function manifest(): MetadataRoute.Manifest {
-  return {
-    name: "Developer Utilities",
-    short_name: "Developer Utilities",
-    description: "A collection of utilities for developers",
+  const manifest: MetadataRoute.Manifest = {
+    name: mainMetadata.title as string,
+    short_name: mainMetadata.title as string,
+    description: mainMetadata.description as string,
     start_url: "/",
     display: "standalone",
     background_color: "#020617",
     theme_color: "#020617",
-    categories: ["developer", "utilities"],
+    categories: mainMetadata.keywords as Array<string>,
     lang: "en",
     icons: [
       {
@@ -82,4 +83,13 @@ export default function manifest(): MetadataRoute.Manifest {
       },
     ],
   };
+
+  // Remove "| Developer Utilities" from shortcut names
+  manifest.shortcuts = manifest.shortcuts?.map((shortcut) => {
+    shortcut.name = shortcut.name.split(" | ")[0];
+    return shortcut;
+  });
+
+  // Return the manifest
+  return manifest;
 }
