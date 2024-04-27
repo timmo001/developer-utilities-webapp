@@ -15,12 +15,12 @@ export default function Output({ value }: { value?: string }): JSX.Element {
     timeout = setTimeout(() => setIsCopied(false), 1500);
   };
 
-  if (!value) return <></>;
-
   const invalidValue = useMemo<boolean>(
-    () => value?.toLowerCase().startsWith("invalid"),
+    () => value?.toLowerCase().startsWith("invalid") || false,
     [value]
   );
+
+  if (!value) return <></>;
 
   return (
     <button
