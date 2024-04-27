@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 import { linksData } from "@/components/shared/links";
 
-const baseUrl = "https://developer-utilities.timmo.dev";
+export const baseUrl = "https://developer-utilities.timmo.dev";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const result: MetadataRoute.Sitemap = [
