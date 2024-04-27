@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { mdiCheck, mdiContentSave } from "@mdi/js";
+import { mdiCheck, mdiContentCopy } from "@mdi/js";
 import Icon from "@mdi/react";
 
 let timeout: NodeJS.Timeout;
@@ -18,18 +18,18 @@ export default function Output({ value }: { value?: string }): JSX.Element {
   if (!value) return <></>;
 
   return (
-    <div className="mt-4 text-lg text-gray-200 rounded bg-gray-800 p-4 flex items-center">
+    <button
+      className="mt-4 text-lg text-gray-200 rounded p-4 flex items-center bg-slate-800 hover:bg-slate-700"
+      onClick={handleCopy}
+    >
       <div className="flex-grow">{value}</div>
-      <button
-        className="ml-8 p-2 rounded text-gray-200 font-light bg-indigo-900 hover:bg-indigo-700"
-        onClick={handleCopy}
-      >
+      <span className="ml-4">
         <Icon
           title="Copy"
           size={0.8}
-          path={isCopied ? mdiCheck : mdiContentSave}
+          path={isCopied ? mdiCheck : mdiContentCopy}
         />
-      </button>
-    </div>
+      </span>
+    </button>
   );
 }
