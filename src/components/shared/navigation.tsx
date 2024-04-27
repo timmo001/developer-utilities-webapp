@@ -4,7 +4,7 @@ import { LinksItem, linksData } from "@/components/shared/links";
 
 function NavigationLink({ link }: { link: LinksItem }): JSX.Element {
   return (
-    <li className="text-slate-50 hover:text-slate-200 active:text-slate-200">
+    <li>
       <Link href={link.href} passHref>
         {link.title}
       </Link>
