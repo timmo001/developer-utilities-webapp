@@ -1,4 +1,9 @@
-import Header from "@/components/header";
+import { Metadata } from "next";
+import Header from "@/components/shared/header";
+
+export const metadata: Metadata = {
+  title: "About | Developer Utilities",
+};
 
 export default async function About(): Promise<JSX.Element> {
   return (

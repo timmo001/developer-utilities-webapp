@@ -1,5 +1,5 @@
-import Header from "@/components/header";
-import Links, { LinksKeys } from "@/components/links";
+import Header from "@/components/shared/header";
+import Links, { LinksKeys } from "@/components/shared/links";
 
 export default async function Home(): Promise<JSX.Element> {
   return (
