@@ -9,10 +9,21 @@ export default function Input({
   value: string;
   setValue: (value: string) => void;
 }): JSX.Element {
+  if (multiline)
+    return (
+      <textarea
+        className="mt-4 text-lg p-4 w-full text-gray-200 flex items-center rounded transition-colors duration-300 bg-slate-900 hover:bg-slate-800 text-wrap break-words"
+        value={value}
+        onChange={(e) => {
+          setValue(e.target.value);
+        }}
+        rows={10}
+      />
+    );
+
   return (
     <input
-      className="mt-4 text-lg p-4 w-full text-gray-200 flex items-center rounded transition-colors duration-300 bg-slate-900 hover:bg-slate-800 text-wrap"
-      multiple={multiline}
+      className="mt-4 text-lg p-4 w-full text-gray-200 flex items-center rounded transition-colors duration-300 bg-slate-900 hover:bg-slate-800"
       value={value}
       onChange={(e) => {
         setValue(e.target.value);
