@@ -19,7 +19,7 @@ export default function Output({ value }: { value?: string }): JSX.Element {
 
   return (
     <button
-      className="mt-4 text-lg text-gray-200 rounded p-4 flex items-center bg-slate-800 hover:bg-slate-700"
+      className="mt-4 text-lg p-4 text-gray-200 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
       onClick={handleCopy}
     >
       <div className="flex-grow">{value}</div>
