@@ -3,7 +3,7 @@ import { Fragment, useMemo } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import { LinksItem, LinksKeys, linksData } from "@/components/links";
+import { LinksItem, LinksKeys, linksData } from "@/components/shared/links";
 
 export default function Breadcrumbs(): JSX.Element {
   const currentPath = usePathname();
