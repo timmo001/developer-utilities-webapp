@@ -26,6 +26,7 @@ export const linksData: LinksData = {
       { title: "Base64 Encoder", href: "/tools/base64-encoder" },
       { title: "JSON Beautifier", href: "/tools/json-beautifier" },
       { title: "JSON Minifier", href: "/tools/json-minifier" },
+      { title: "URL Encoder", href: "/tools/url-encoder" },
       { title: "UUID Generator", href: "/tools/uuid-generator" },
     ],
   },
