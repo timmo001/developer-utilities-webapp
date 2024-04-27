@@ -41,12 +41,12 @@ export default function Select({
     <div className="relative inline-block w-80">
       <button
         onClick={toggleDropdown}
-        className="block w-80 p-2 border-slate-900 bg-slate-950 rounded appearance-none outline-none focus:outline-none focus:ring-1 focus:ring-slate-950 focus:border-slate-950"
+        className="block w-80 p-2 border-slate-800 bg-slate-900 rounded appearance-none outline-none focus:outline-none focus:ring-1 focus:ring-slate-900 focus:border-slate-900"
       >
         {selectedItem.name}
       </button>
       {isOpen && (
-        <ul className="absolute w-80 mt-2 py-1 border rounded border-slate-900 bg-slate-950  shadow-xl">
+        <ul className="absolute w-80 mt-2 py-1 border rounded border-slate-800 bg-slate-900  shadow-xl">
           {items.map((item) => (
             <li
               key={item.id}
