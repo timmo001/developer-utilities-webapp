@@ -17,7 +17,7 @@ export default function Input({
         onChange={(e) => {
           setValue(e.target.value);
         }}
-        rows={10}
+        rows={12}
       />
     );
 
