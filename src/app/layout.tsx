@@ -9,7 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Developer Utilities",
+  applicationName: "Developer Utilities",
   description: "A collection of utilities for developers.",
+  keywords: ["developer", "utilities"],
 };
 
 export default function RootLayout({
