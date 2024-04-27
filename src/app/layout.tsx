@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navigation />
-        <main className="flex min-h-screen flex-col items-center justify-between p-16">
+        <main className="flex min-h-screen flex-col items-center justify-between p-8">
           {children}
         </main>
       </body>
