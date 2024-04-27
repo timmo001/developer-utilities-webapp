@@ -49,7 +49,7 @@ export default async function Links({
           <ul className="mt-4 text-center text-lg text-gray-200">
             {paths.map(({ title, href }: LinksItem, index: number) => (
               <li key={index}>
-                <button className="min-w-80 mt-2 px-6 py-3 rounded transition-colors duration-300 bg-indigo-900 hover:bg-indigo-700">
+                <button className="min-w-80 mt-3 px-6 py-3 rounded transition-colors duration-300 bg-indigo-900 hover:bg-indigo-700">
                   <Link href={href}>{title}</Link>
                 </button>
               </li>
