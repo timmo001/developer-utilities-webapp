@@ -84,7 +84,7 @@ export default function UUIDGenerator(): JSX.Element {
 
         <button
           onClick={() => setValue(generateUUID(uuidVersion.id))}
-          className="mt-4 px-4 py-2 rounded transition-colors duration-300 bg-indigo-900 hover:bg-indigo-700"
+          className="min-w-80 mt-2 px-6 py-3 rounded transition-colors duration-300 bg-indigo-900 hover:bg-indigo-700"
         >
           Generate
         </button>
