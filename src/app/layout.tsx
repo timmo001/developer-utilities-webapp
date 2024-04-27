@@ -1,11 +1,11 @@
 import { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Fira_Code, Inter } from "next/font/google";
 
 import "./globals.css";
 
 import Navigation from "@/components/shared/navigation";
 
-const inter = Inter({ subsets: ["latin"] });
+const firaCode = Fira_Code({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Developer Utilities",
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={firaCode.className}>
         <Navigation />
         <main className="flex min-h-screen flex-col items-center justify-between p-8">
           {children}
