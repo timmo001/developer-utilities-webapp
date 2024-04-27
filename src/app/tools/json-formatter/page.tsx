@@ -15,7 +15,7 @@ export default function JSONFormatter(): JSX.Element {
     try {
       const parsed = JSON.parse(value);
 
-      // Beautify the JSON
+      // Format the JSON
       const output = JSON.stringify(parsed, null, 2);
 
       setValueOut(output);
