@@ -35,7 +35,7 @@ export default function Output({ value }: { value?: string }): JSX.Element {
           invalidValue ? "text-center" : "text-justify"
         }`}
       >
-        <code>{value}</code>
+        <code className="break-all">{value}</code>
       </pre>
       {!invalidValue && (
         <span className={`ml-4 ${isCopied && "text-green-500"}`}>

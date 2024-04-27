@@ -12,10 +12,14 @@ export default function Base64Encoder(): JSX.Element {
   function handleSetValue(value: string): void {
     setValueIn(value);
 
-    // Encode the value to Base64
-    const encoded = btoa(value);
-
-    setValueOut(encoded);
+    try {
+      // Encode the value to Base64
+      const encoded = btoa(value);
+      setValueOut(encoded);
+    } catch (error) {
+      console.warn(error);
+      setValueOut("Invalid Base64 input");
+    }
   }
 
   return (

@@ -11,10 +11,14 @@ export default function Base64Decoder(): JSX.Element {
   function handleSetValue(value: string): void {
     setValueIn(value);
 
-    // Decode the base64 encoded string
-    const decoded = atob(value);
-
-    setValueOut(decoded);
+    try {
+      // Decode the base64 encoded string
+      const decoded = atob(value);
+      setValueOut(decoded);
+    } catch (error) {
+      console.warn(error);
+      setValueOut("Invalid Base64");
+    }
   }
 
   return (

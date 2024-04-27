@@ -20,6 +20,7 @@ export default function JSONMinifier(): JSX.Element {
 
       setValueOut(output);
     } catch (error) {
+      console.warn(error);
       setValueOut("Invalid JSON");
     }
   }
