@@ -24,7 +24,7 @@ export const linksData: LinksData = {
     paths: [
       { title: "Base64 Decoder", href: "/tools/base64-decoder" },
       { title: "Base64 Encoder", href: "/tools/base64-encoder" },
-      { title: "JSON Beautifier", href: "/tools/json-beautifier" },
+      { title: "JSON Formatter", href: "/tools/json-formatter" },
       { title: "JSON Minifier", href: "/tools/json-minifier" },
       { title: "URL Decoder", href: "/tools/url-decoder" },
       { title: "URL Encoder", href: "/tools/url-encoder" },

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Input from "@/components/input";
 import Output from "@/components/output";
 
-export default function JSONBeautifier(): JSX.Element {
+export default function JSONFormatter(): JSX.Element {
   const [valueIn, setValueIn] = useState<string>("");
   const [valueOut, setValueOut] = useState<string>();
 
@@ -27,8 +27,8 @@ export default function JSONBeautifier(): JSX.Element {
 
   return (
     <section className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex-row">
-      <h1 className="text-4xl font-thin">JSON Beautifier</h1>
-      <h2 className="text-md font-thin mb-8">Beautify JSON strings.</h2>
+      <h1 className="text-4xl font-thin">JSON Formatter</h1>
+      <h2 className="text-md font-thin mb-8">Format JSON strings.</h2>
 
       <div className="flex flex-col items-center justify-center w-full p-8 rounded-lg">
         <Input multiline value={valueIn} setValue={handleSetValue} />

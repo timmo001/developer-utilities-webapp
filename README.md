@@ -8,7 +8,7 @@ The reason for building this webapp is to provide a single place for developers 
 
 - Base64 Decoder
 - Base64 Encoder
-- JSON Beautifier
+- JSON Formatter
 - JSON Minifier
 - URL Decoder
 - URL Encoder
