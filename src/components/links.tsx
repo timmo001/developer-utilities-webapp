@@ -21,7 +21,7 @@ export const linksData: LinksData = {
   [LinksKeys.Tools]: {
     title: "Tools",
     href: "/tools",
-    paths: [{ title: "Placeholder", href: "/tools/placeholder" }],
+    paths: [{ title: "UUID Generator", href: "/tools/uuid-generator" }],
   },
 };
 
@@ -37,7 +37,7 @@ export default async function Links({
 
   return (
     <div className="flex flex-col items-center justify-center w-full p-8 rounded-lg">
-      <h2 className="text-2xl font-bold">{title}</h2>
+      <h2 className="text-2xl font-thin">{title}</h2>
       {paths && paths.length > 0 && (
         <>
           <ul className="mt-4 text-lg text-gray-200">

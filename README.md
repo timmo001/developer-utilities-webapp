@@ -6,7 +6,7 @@ The reason for building this webapp is to provide a single place for developers 
 
 ## Features
 
-- TBD
+- UUID Generator
 
 ## Deployment
 
