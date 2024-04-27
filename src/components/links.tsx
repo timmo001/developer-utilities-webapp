@@ -42,12 +42,12 @@ export default async function Links({
         <>
           <ul className="mt-4 text-lg text-gray-200">
             {paths.map(({ title, href }: LinksItem, index: number) => (
-              <li
+              <button
                 key={index}
                 className="mt-2 bg-indigo-900 px-4 py-2 rounded transition-colors duration-300 hover:bg-indigo-700"
               >
                 <Link href={href}>{title}</Link>
-              </li>
+              </button>
             ))}
           </ul>
         </>

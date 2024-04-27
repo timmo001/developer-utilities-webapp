@@ -1,4 +1,5 @@
 "use client";
+import Output from "@/components/output";
 import Select from "@/components/select";
 import { useMemo, useState } from "react";
 import { v1 as uuidv1, v3 as uuidv3, v4 as uuidv4, v5 as uuidv5 } from "uuid";
@@ -53,15 +54,11 @@ function generateUUID(version: UUIDVersion): string {
 }
 
 export default function UUIDGenerator(): JSX.Element {
-  const [value, setValue] = useState<string>("");
+  const [value, setValue] = useState<string>();
 
   const [uuidVersion, setUUIDVersion] = useState<UUIDVersionItem>(
     uuidVersions[2]
   );
-
-  function handleGenerateUUID() {
-    setValue(generateUUID(uuidVersion.id));
-  }
 
   return (
     <section className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex-row">
@@ -75,23 +72,24 @@ export default function UUIDGenerator(): JSX.Element {
         <Select
           items={uuidVersions}
           value={uuidVersion}
-          onChange={(event: React.ChangeEvent<HTMLSelectElement>) =>
+          onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
             setUUIDVersion(
               uuidVersions.find(
                 (version) => version.id === parseInt(event.target.value)
               ) || uuidVersions[2]
-            )
-          }
+            );
+            setValue(undefined);
+          }}
         />
 
         <button
-          onClick={handleGenerateUUID}
-          className="mt-4 px-4 py-2 bg-indigo-900 rounded text-gray-200"
+          onClick={() => setValue(generateUUID(uuidVersion.id))}
+          className="mt-4 px-4 py-2 rounded transition-colors duration-300 bg-indigo-900 hover:bg-indigo-700"
         >
           Generate
         </button>
 
-        <div className="mt-4 text-lg text-gray-200">{value}</div>
+        <Output value={value} />
       </div>
     </section>
   );
