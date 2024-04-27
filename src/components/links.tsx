@@ -29,6 +29,8 @@ export const linksData: LinksData = {
       { title: "URL Decoder", href: "/tools/url-decoder" },
       { title: "URL Encoder", href: "/tools/url-encoder" },
       { title: "UUID Generator", href: "/tools/uuid-generator" },
+      { title: "XML Formatter", href: "/tools/xml-formatter" },
+      { title: "XML Minifier", href: "/tools/xml-minifier" },
     ],
   },
 };
