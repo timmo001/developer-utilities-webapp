@@ -28,4 +28,4 @@ bun dev
 
 This project is deployed on Vercel, you can deploy it on your own Vercel account and GitHub repository by clicking the button below.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftimmo001%2Fdeveloper-utilities-webapp&project-name=developer-utilities-webapp&repository-name=developer-utilities-webapp&demo-title=Developer%20Utiltities%20Webapp&demo-url=https%3A%2F%2Fdeveloper-utiltities.timmo.dev)
