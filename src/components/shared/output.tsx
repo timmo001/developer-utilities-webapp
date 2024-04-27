@@ -24,7 +24,7 @@ export default function Output({ value }: { value?: string }): JSX.Element {
 
   return (
     <button
-      className={`mt-4 text-lg p-4 text-gray-200 w-full flex items-center rounded transition-colors duration-300 bg-slate-900 ${
+      className={`mt-4 text-md p-4 text-gray-200 w-full flex items-center rounded transition-colors duration-300 bg-slate-900 ${
         invalidValue ? "bg-amber-700" : "hover:bg-slate-800"
       }`}
       disabled={invalidValue}
