@@ -10,6 +10,7 @@ const firaCode = Fira_Code({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Developer Utilities",
   applicationName: "Developer Utilities",
+  category: "Utilities",
   description: "A collection of utilities for developers.",
   keywords: ["developer", "utilities"],
 };
