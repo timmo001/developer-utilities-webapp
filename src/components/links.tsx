@@ -46,10 +46,10 @@ export default async function Links({
       <h2 className="text-2xl font-thin">{title}</h2>
       {paths && paths.length > 0 && (
         <>
-          <ul className="mt-4 text-lg text-gray-200">
+          <ul className="mt-4 text-center text-lg text-gray-200">
             {paths.map(({ title, href }: LinksItem, index: number) => (
               <li key={index}>
-                <button className="mt-2 bg-indigo-900 px-4 py-2 rounded transition-colors duration-300 hover:bg-indigo-700">
+                <button className="min-w-80 mt-2 px-6 py-3 rounded transition-colors duration-300 bg-indigo-900 hover:bg-indigo-700">
                   <Link href={href}>{title}</Link>
                 </button>
               </li>
