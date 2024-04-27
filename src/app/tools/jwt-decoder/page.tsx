@@ -1,9 +1,14 @@
 "use client";
+import { Metadata } from "next";
 import { useState } from "react";
 import { jwtDecode } from "jwt-decode";
 
 import Input from "@/components/input";
 import Output from "@/components/output";
+
+export const metadata: Metadata = {
+  title: "JWT Decoder | Developer Utilities",
+};
 
 export default function JWTDecoder(): JSX.Element {
   const [valueIn, setValueIn] = useState<string>("");

@@ -4,6 +4,12 @@ import { useState } from "react";
 import Input from "@/components/input";
 import Output from "@/components/output";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "URL Decoder | Developer Utilities",
+};
+
 export default function URLDecoder(): JSX.Element {
   const [valueIn, setValueIn] = useState<string>("");
   const [valueOut, setValueOut] = useState<string>();

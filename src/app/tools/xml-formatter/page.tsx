@@ -1,9 +1,14 @@
 "use client";
+import { Metadata } from "next";
 import { useState } from "react";
 import xmlFormat from "xml-formatter";
 
 import Input from "@/components/input";
 import Output from "@/components/output";
+
+export const metadata: Metadata = {
+  title: "XML Formatter | Developer Utilities",
+};
 
 export default function XMLFormatter(): JSX.Element {
   const [valueIn, setValueIn] = useState<string>("");

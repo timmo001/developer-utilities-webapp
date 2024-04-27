@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import Header from "@/components/header";
 import Links, { LinksKeys } from "@/components/links";
+
+export const metadata: Metadata = {
+  title: "Tools | Developer Utilities",
+};
 
 export default async function Tools(): Promise<JSX.Element> {
   return (

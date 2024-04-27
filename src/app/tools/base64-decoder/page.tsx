@@ -1,8 +1,13 @@
 "use client";
+import { Metadata } from "next";
 import { useState } from "react";
 
 import Input from "@/components/input";
 import Output from "@/components/output";
+
+export const metadata: Metadata = {
+  title: "Base64 Decoder | Developer Utilities",
+};
 
 export default function Base64Decoder(): JSX.Element {
   const [valueIn, setValueIn] = useState<string>("");

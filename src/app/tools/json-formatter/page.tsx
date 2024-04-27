@@ -1,8 +1,13 @@
 "use client";
+import { Metadata } from "next";
 import { useState } from "react";
 
 import Input from "@/components/input";
 import Output from "@/components/output";
+
+export const metadata: Metadata = {
+  title: "JSON Formatter | Developer Utilities",
+};
 
 export default function JSONFormatter(): JSX.Element {
   const [valueIn, setValueIn] = useState<string>("");

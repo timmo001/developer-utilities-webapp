@@ -1,8 +1,13 @@
 "use client";
+import { Metadata } from "next";
 import { useState } from "react";
 
 import Input from "@/components/input";
 import Output from "@/components/output";
+
+export const metadata: Metadata = {
+  title: "URL Encoder | Developer Utilities",
+};
 
 export default function URLEncoder(): JSX.Element {
   const [valueIn, setValueIn] = useState<string>("");

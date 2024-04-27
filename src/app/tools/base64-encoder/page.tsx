@@ -1,8 +1,13 @@
 "use client";
+import { Metadata } from "next";
 import { useState } from "react";
 
 import Input from "@/components/input";
 import Output from "@/components/output";
+
+export const metadata: Metadata = {
+  title: "Base64 Encoder | Developer Utilities",
+};
 
 // TODO: URL safe Base64 encoding (base64url)
 export default function Base64Encoder(): JSX.Element {
