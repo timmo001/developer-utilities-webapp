@@ -29,22 +29,20 @@ export default function Breadcrumbs(): JSX.Element {
 
   return (
     <nav className="flex items-center justify-between px-4 pt-2 text-gray-200">
-      {currentPath !== "/" && (
-        <ul className="flex space-x-4">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <span className="mx-2 font-semibold">{">"}</span>
-          {pathData.map(({ href, title }, index) => (
-            <Fragment key={index}>
-              {index > 0 && <span className="mx-2 font-semibold">{">"}</span>}
-              <li>
-                <Link href={href}>{title}</Link>
-              </li>
-            </Fragment>
-          ))}
-        </ul>
-      )}
+      <ul className={`flex space-x-4 ${paths.length < 1 && "invisible"}`}>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <span className="mx-2 font-semibold">{">"}</span>
+        {pathData.map(({ href, title }, index) => (
+          <Fragment key={index}>
+            {index > 0 && <span className="mx-2 font-semibold">{">"}</span>}
+            <li>
+              <Link href={href}>{title}</Link>
+            </li>
+          </Fragment>
+        ))}
+      </ul>
     </nav>
   );
 }

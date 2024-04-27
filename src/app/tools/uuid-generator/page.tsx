@@ -62,7 +62,7 @@ export default function UUIDGenerator(): JSX.Element {
 
   return (
     <section className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex-row">
-      <h1 className="text-2xl font-thin">UUID Generator</h1>
+      <h1 className="text-4xl font-thin">UUID Generator</h1>
       <h2 className="text-md font-thin mb-8">
         Generate a UUID (Universally Unique Identifier) using the selected
         version.
