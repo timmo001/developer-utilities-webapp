@@ -19,7 +19,7 @@ type LinksData = Record<LinksKeys, LinksItem>;
 const linksData: LinksData = {
   [LinksKeys.Tools]: {
     title: "Tools",
-    paths: [{ name: "Placeholder", href: "/placeholder" }],
+    paths: [{ name: "Placeholder", href: "/tools" }],
   },
 };
 
