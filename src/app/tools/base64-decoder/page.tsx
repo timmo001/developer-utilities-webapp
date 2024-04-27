@@ -4,7 +4,7 @@ import { useState } from "react";
 import Input from "@/components/input";
 import Output from "@/components/output";
 
-export default function UUIDGenerator(): JSX.Element {
+export default function Base64Decoder(): JSX.Element {
   const [valueIn, setValueIn] = useState<string>("");
   const [valueOut, setValueOut] = useState<string>();
 
