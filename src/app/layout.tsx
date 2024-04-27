@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Fira_Code, Inter } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 
 import "./globals.css";
 
