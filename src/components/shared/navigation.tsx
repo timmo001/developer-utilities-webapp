@@ -5,7 +5,7 @@ import { LinksItem, linksData } from "@/components/shared/links";
 function NavigationLink({ link }: { link: LinksItem }): JSX.Element {
   return (
     <li>
-      <Link href={link.href} passHref>
+      <Link href={link.href} prefetch>
         {link.title}
       </Link>
     </li>
