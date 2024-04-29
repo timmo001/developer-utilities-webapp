@@ -5,7 +5,7 @@ import URLEncoder from "@/components/url-encoder";
 
 export const metadata: Metadata = {
   title: "URL Encoder | Developer Utilities",
-  description: "Encode URL encoded strings.",
+  description: "URL Encode strings.",
 };
 
 export default async function Page(): Promise<JSX.Element> {
