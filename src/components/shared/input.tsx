@@ -1,5 +1,5 @@
 "use client";
-import { mdiContentPaste, mdiFile } from "@mdi/js";
+import { mdiContentPaste, mdiFileOutline } from "@mdi/js";
 import Icon from "@mdi/react";
 
 export default function Input({
@@ -49,7 +49,7 @@ export default function Input({
           className="absolute top-4 right-16 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
           onClick={handleUpload}
         >
-          <Icon title="Upload" size={0.8} path={mdiFile} />
+          <Icon title="Upload" size={0.8} path={mdiFileOutline} />
         </button>
         <button
           className="absolute top-4 right-4 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
@@ -73,7 +73,7 @@ export default function Input({
         className="absolute top-4 right-16 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
         onClick={handleUpload}
       >
-        <Icon title="Upload" size={0.8} path={mdiFile} />
+        <Icon title="Upload" size={0.8} path={mdiFileOutline} />
       </button>
       <button
         className="absolute top-4 right-4 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
