@@ -11,7 +11,7 @@ export default function Output({
   type?: string;
   value?: string;
 }): JSX.Element {
-  const [isCopied, setIsCopied] = useState(false);
+  const [isCopied, setIsCopied] = useState<boolean>(false);
 
   function handleCopy(): void {
     setIsCopied(false);
