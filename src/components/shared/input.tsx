@@ -1,5 +1,5 @@
 "use client";
-import { mdiContentPaste } from "@mdi/js";
+import { mdiContentPaste, mdiFile } from "@mdi/js";
 import Icon from "@mdi/react";
 
 export default function Input({
@@ -11,6 +11,23 @@ export default function Input({
   value: string;
   setValue: (value: string) => void;
 }): JSX.Element {
+  function handleUpload(): void {
+    const input = document.createElement("input");
+    input.type = "file";
+    input.accept = "*.*";
+    input.onchange = () => {
+      const file = input.files?.[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          setValue(e.target?.result as string);
+        };
+        reader.readAsText(file);
+      }
+    };
+    input.click();
+  }
+
   function handlePaste(): void {
     navigator.clipboard.readText().then((text) => {
       setValue(text);
@@ -29,6 +46,12 @@ export default function Input({
           rows={8}
         />
         <button
+          className="absolute top-4 right-16 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
+          onClick={handleUpload}
+        >
+          <Icon title="Upload" size={0.8} path={mdiFile} />
+        </button>
+        <button
           className="absolute top-4 right-4 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
           onClick={handlePaste}
         >
@@ -46,6 +69,12 @@ export default function Input({
           setValue(e.target.value);
         }}
       />
+      <button
+        className="absolute top-4 right-16 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
+        onClick={handleUpload}
+      >
+        <Icon title="Upload" size={0.8} path={mdiFile} />
+      </button>
       <button
         className="absolute top-4 right-4 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
         onClick={handlePaste}
