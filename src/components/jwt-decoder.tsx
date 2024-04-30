@@ -33,9 +33,9 @@ export default function JWTDecoder(): JSX.Element {
       <Input multiline value={valueIn} setValue={handleSetValue} />
 
       <h3 className="w-full pt-4 text-lg text-left font-thin">Header</h3>
-      <Output value={headerOut} />
+      <Output type="json" value={headerOut} />
       <h3 className="w-full pt-4 text-lg text-left font-thin">Body</h3>
-      <Output value={bodyOut} />
+      <Output type="json" value={bodyOut} />
     </div>
   );
 }
