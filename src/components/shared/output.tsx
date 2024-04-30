@@ -40,25 +40,26 @@ export default function Output({
 
   return (
     <div
-      className={`mt-4 text-md p-4 text-gray-200 w-full flex items-center rounded transition-colors duration-300 bg-slate-900`}
+      className={`relative mt-4 text-md text-gray-200 w-full flex items-center rounded transition-colors duration-300 bg-slate-900`}
     >
       <pre
-        className={`flex-grow text-wrap break-words ${
+        className={`text-md p-4 w-full text-gray-200 flex items-center rounded transition-colors duration-300 bg-slate-900 text-wrap break-words ${
           invalidValue ? "text-center" : "text-justify"
         }`}
+        style={{ paddingRight: "6.4rem" }}
       >
-        <code className="break-all">{value}</code>
+        <code className="w-full break-all">{value}</code>
       </pre>
       {!invalidValue && (
-        <span className={`flex flex-row ml-4 `}>
+        <>
           <button
-            className="mr-4 p-2 items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
+            className="absolute top-4 right-16 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
             onClick={handleSave}
           >
             <Icon title="Save" size={0.8} path={mdiContentSaveOutline} />
           </button>
           <button
-            className={`p-2 items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700 ${
+            className={`absolute top-4 right-4 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700 ${
               isCopied && "text-green-500"
             }`}
             onClick={handleCopy}
@@ -70,7 +71,7 @@ export default function Output({
               path={isCopied ? mdiCheck : mdiContentCopy}
             />
           </button>
-        </span>
+        </>
       )}
     </div>
   );

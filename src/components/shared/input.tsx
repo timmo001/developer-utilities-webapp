@@ -54,16 +54,18 @@ export default function Input({
             setValue(e.target.value);
           }}
           rows={8}
+          style={{ paddingRight: "6.4rem" }}
         />
       ) : (
         <input
-          className="text-md p-4 w-full text-gray-200 flex items-center rounded transition-colors duration-300 bg-slate-900"
+          className="text-md p-4 w-full text-gray-200 flex items-center rounded transition-colors duration-300 bg-slate-900 text-wrap break-words"
           value={value}
           onChange={(e) => {
             setValue(e.target.value);
           }}
+          style={{ paddingRight: "6.4rem" }}
         />
-      )}{" "}
+      )}
       <button
         className="absolute top-4 right-16 p-2 flex items-center rounded transition-colors duration-300 bg-slate-800 hover:bg-slate-700"
         onClick={handleUpload}
