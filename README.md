@@ -10,6 +10,7 @@ This webapp provides a single place for developers to access a collection of uti
 - Base64 Encoder
 - JSON Formatter
 - JSON Minifier
+- JSON to CSV
 - JWT Decoder
 - URL Decoder
 - URL Encoder
