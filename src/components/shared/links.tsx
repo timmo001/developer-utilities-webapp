@@ -26,6 +26,7 @@ export const linksData: LinksData = {
       { title: "Base64 Encoder", href: "/tools/base64-encoder" },
       { title: "JSON Formatter", href: "/tools/json-formatter" },
       { title: "JSON Minifier", href: "/tools/json-minifier" },
+      { title: "JSON to CSV", href: "/tools/json-to-csv" },
       { title: "JWT Decoder", href: "/tools/jwt-decoder" },
       { title: "URL Decoder", href: "/tools/url-decoder" },
       { title: "URL Encoder", href: "/tools/url-encoder" },

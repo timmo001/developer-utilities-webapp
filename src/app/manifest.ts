@@ -5,6 +5,7 @@ import { metadata as base64DecoderMetadata } from "@/app/tools/base64-decoder/pa
 import { metadata as base64EncoderMetadata } from "@/app/tools/base64-encoder/page";
 import { metadata as jsonFormatterMetadata } from "@/app/tools/json-formatter/page";
 import { metadata as jsonMinifierMetadata } from "@/app/tools/json-minifier/page";
+import { metadata as jsonToCSVMetadata } from "@/app/tools/json-to-csv/page";
 import { metadata as jwtDecoderMetadata } from "@/app/tools/jwt-decoder/page";
 import { metadata as urlEncoderMetadata } from "@/app/tools/url-encoder/page";
 import { metadata as urlDecoderMetadata } from "@/app/tools/url-decoder/page";
@@ -50,6 +51,11 @@ export default function manifest(): MetadataRoute.Manifest {
         name: jsonMinifierMetadata.title as string,
         description: jsonMinifierMetadata.description as string,
         url: "/tools/json-minifier",
+      },
+      {
+        name: jsonToCSVMetadata.title as string,
+        description: jsonToCSVMetadata.description as string,
+        url: "/tools/json-to-csv",
       },
       {
         name: jwtDecoderMetadata.title as string,
