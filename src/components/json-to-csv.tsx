@@ -70,7 +70,7 @@ export default function JSONToCSV(): JSX.Element {
     <div className="flex flex-col items-center justify-center w-full p-8 rounded-lg">
       <Input multiline value={valueIn} setValue={handleSetValue} />
 
-      <Output type="json" value={valueOut} />
+      <Output type="csv" value={valueOut} />
     </div>
   );
 }
