@@ -57,7 +57,7 @@ export default function JSONToCSV(): JSX.Element {
 
       // Convert the parsed JSON to CSV
       const csvOutput = generateCsv(csvConfig)(parsed);
-      const output = `${asString(csvOutput)}\n`;
+      const output = asString(csvOutput);
 
       setValueOut(output);
     } catch (error) {
