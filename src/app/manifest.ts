@@ -59,12 +59,6 @@ export default function manifest(): MetadataRoute.Manifest {
         icons,
       },
       {
-        name: jsonToCSVMetadata.title as string,
-        description: jsonToCSVMetadata.description as string,
-        url: "/tools/json-to-csv",
-        icons,
-      },
-      {
         name: jwtDecoderMetadata.title as string,
         description: jwtDecoderMetadata.description as string,
         url: "/tools/jwt-decoder",
