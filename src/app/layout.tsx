@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 
-import "./globals.css";
+import "@/app/globals.css";
 
 import Navigation from "@/components/shared/navigation";
 
@@ -10,9 +10,13 @@ const firaCode = Fira_Code({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Developer Utilities",
   applicationName: "Developer Utilities",
+  publisher: "Aidan Timson",
   category: "Utilities",
   description: "A collection of utilities for developers.",
   keywords: ["developer", "utilities"],
+  openGraph: {
+    images: [{ url: "/api/og" }],
+  },
 };
 
 export default function RootLayout({
