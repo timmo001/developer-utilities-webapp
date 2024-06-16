@@ -33,6 +33,13 @@ export default function manifest(): MetadataRoute.Manifest {
     categories: mainMetadata.keywords as Array<string>,
     lang: "en",
     icons,
+    screenshots: [
+      {
+        src: "/api/og",
+        sizes: "1200x630",
+        type: "image/png",
+      },
+    ],
     shortcuts: [
       {
         name: base64DecoderMetadata.title as string,
